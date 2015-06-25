@@ -20,18 +20,19 @@
  <img src='car.png' id='car'>
 </div>
 <script>
-go()
-
 function go(){
    //$("#click").click(function(){
     //for(i=0;i<100;i++){
 //if(i<2){
 $('#car')
    .animate( { right:'100%', top:'0px' }, 'slow')
-   .animate( { right:'100%', top:'0px' }, 'fast')
-//});
 }
-
+function reset(){
+$('#car')
+   .animate( { right:'0%', top:'0px'}, 'fast')
+}
 </script>
+<button onclick="go();">GO!</button>
+<button onclick="reset();">Reset</button>
 </body>
 </html>
